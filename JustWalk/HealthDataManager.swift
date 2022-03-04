@@ -15,7 +15,7 @@ final class HealthDataManager {
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
     
-    let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+    let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
     
     private init() {
         if HKHealthStore.isHealthDataAvailable() {
